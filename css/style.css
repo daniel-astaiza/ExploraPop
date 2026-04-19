@@ -1,0 +1,61 @@
+body{
+    background-color: #8cd4fc ;
+}
+
+.card {
+      transition: transform 0.2s ease, box-shadow 0.2s ease;
+      border: none;
+      border-radius: 1rem;
+      overflow: hidden;
+    }
+
+    .card:hover {
+      transform: translateY(-5px);
+      box-shadow: 0 1rem 2rem rgba(0, 0, 0, 0.1) !important;
+    }
+
+    .card-img-top {
+      height: 200px;
+      object-fit: cover;
+      transition: transform 0.4s;
+    }
+
+    .card:hover .card-img-top {
+      transform: scale(1.03);
+    }
+
+    .btn-primary {
+      background-color: #004cff;
+      border-color: #0800ff;
+      transition: all 0.2s;
+    }
+
+    .btn-primary:hover {
+      background-color: #1100ff;
+      border-color: #091ab4;
+    }
+
+    .navbar-brand img {
+      border-radius: 50%;
+      object-fit: cover;
+    }
+
+    .bg-light-custom {
+      background-color: #fef9f0;
+    }
+
+    .modal-img {
+      border-radius: 1rem;
+      max-height: 220px;
+      width: auto;
+      object-fit: cover;
+    }
+
+    footer a {
+      text-decoration: none;
+      color: #3d36fc;
+    }
+
+    footer a:hover {
+      text-decoration: underline;
+    }

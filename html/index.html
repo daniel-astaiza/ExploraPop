@@ -1,0 +1,487 @@
+<!doctype html>
+<html lang="es">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>ExploraPop | Destinos y Reservas en Popayán</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+  <link rel="stylesheet" href="../css/style.css">
+
+</head>
+
+<body class="">
+
+  <!-- =========================== NAVBAR MODERNA =========================== -->
+
+  <nav class="navbar navbar-expand-lg navbar-light bg-white shadow-sm sticky-top">
+    <div class="container">
+      <a class="navbar-brand d-flex align-items-center fw-bold fs-4" href="#">
+        <img src="/img/dibujos-animados-viajes-vacaciones_24640-22301.avif" width="36" height="36" class="me-2 rounded-circle" alt="Logo">
+        ExploraPop
+      </a>
+
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#menuPrincipal" aria-label="Menú">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+      <div class="collapse navbar-collapse justify-content-end" id="menuPrincipal">
+        <ul class="navbar-nav gap-2">
+          <li class="nav-item"><a class="nav-link active fw-semibold" href="#inicio">Inicio</a></li>
+          <li class="nav-item"><a class="nav-link" href="#destinos">Destinos</a></li>
+          <li class="nav-item"><a class="nav-link" href="#reservas">Reservas</a></li>
+          <li class="nav-item"><a class="nav-link" href="#contacto">Contacto</a></li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <main>
+    <!-- =========================== SECCIÓN BIENVENIDA (CARD VIAJERO) =========================== -->
+
+    <section id="inicio" class="container mt-5 pt-2">
+      <div class="row justify-content-center">
+        <div class="col-md-6 col-lg-5">
+          <div class="card p-4 shadow-lg border-0 rounded-4 bg-white">
+            <div class="text-center mb-2">
+               <img src="/img/dibujos-animados-viajes-vacaciones_24640-22301.avif" width="100" height="100" class="me-2 rounded-circle" alt="Logo">
+            </div>
+                    
+            <h1 class="text-center">Bienvenido Viajero </h1>
+            <p class="text-center text-secondary">Ingresa tus datos y comienza a explorar Popayán</p>
+            <input type="text" class="form-control mb-3 rounded-pill" placeholder="Digite su nombre completo">
+            <input type="text" class="form-control mb-3 rounded-pill" placeholder="Digite su usuario">
+            <button class="btn btn-primary w-100 rounded-pill py-2 fw-semibold">Siguiente <i class="bi bi-arrow-right-short"></i></button>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- =========================== DESTINOS TURÍSTICOS =========================== -->
+
+    <section id="destinos" class="container mt-5 pt-4">
+      <div class="text-center mb-4">
+        <h2 class="fw-bold display-6">Destinos turísticos</h2>
+        <p class="lead text-secondary">Explora los lugares más emblemáticos de Popayán, la Ciudad Blanca</p>
+        <div class="mx-auto" style="width: 60px; height: 3px; background-color: #4042c0;"></div>
+      </div>
+
+      <div class="row g-4">
+        <!-- Tarjeta 1: Parque Caldas -->
+        <div class="col-md-6 col-lg-3">
+          <div class="card h-100 shadow-sm">
+            <img src="../img/parque-caldas.jpg" class="card-img-top" alt="Parque Caldas">
+            <div class="card-body d-flex flex-column">
+              <h5 class="text-center fw-bold">Parque Caldas</h5>
+              <div class="mt-auto d-grid">
+                <button class="btn btn-outline-primary rounded-pill" data-bs-toggle="modal" data-bs-target="#modalParqueCaldas">
+                  Más info <i class="bi bi-info-circle"></i>
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Tarjeta 2: Morro de Tulcán -->
+
+        <div class="col-md-6 col-lg-3">
+          <div class="card h-100 shadow-sm">
+            <img src="../img/El_Morro_de_Tulcán,_Popayán.jpg" class="card-img-top" alt="Morro de Tulcán">
+            <div class="card-body d-flex flex-column">
+              <h5 class="text-center fw-bold">Morro de Tulcán</h5>
+              <div class="mt-auto d-grid">
+                <button class="btn btn-outline-primary rounded-pill" data-bs-toggle="modal" data-bs-target="#modalMorroTulcan">
+                  Más info <i class="bi bi-info-circle"></i>
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Tarjeta 3: Puente del Humilladero -->
+
+        <div class="col-md-6 col-lg-3">
+          <div class="card h-100 shadow-sm">
+            <img src="../img/Puente_del_Humilladero.jpeg" class="card-img-top" alt="Puente del Humilladero">
+            <div class="card-body d-flex flex-column">
+              <h5 class="text-center fw-bold">Puente del Humilladero</h5>
+              <div class="mt-auto d-grid">
+                <button class="btn btn-outline-primary rounded-pill" data-bs-toggle="modal" data-bs-target="#modalPuente">
+                  Más info <i class="bi bi-info-circle"></i>
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Tarjeta 4: Catedral -->
+
+        <div class="col-md-6 col-lg-3">
+          <div class="card h-100 shadow-sm">
+            <img src="../img/Catedralpopayan.jpg" class="card-img-top" alt="Catedral">
+            <div class="card-body d-flex flex-column">
+              <h5 class="text-center fw-bold">Catedral Basílica</h5>
+              <div class="mt-auto d-grid">
+                <button class="btn btn-outline-primary rounded-pill" data-bs-toggle="modal" data-bs-target="#modalCatedral">
+                  Más info <i class="bi bi-info-circle"></i>
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Tarjeta 5: Pueblito Patojo -->
+
+        <div class="col-md-6 col-lg-3">
+          <div class="card h-100 shadow-sm">
+            <img src="../img/Pueblito-patojo.jpg" class="card-img-top" alt="Pueblito Patojo">
+            <div class="card-body d-flex flex-column">
+              <h5 class="text-center fw-bold">Pueblito Patojo</h5>
+              <div class="mt-auto d-grid">
+                <button class="btn btn-outline-primary rounded-pill" data-bs-toggle="modal" data-bs-target="#modalPatojo">
+                  Más info <i class="bi bi-info-circle"></i>
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Tarjeta 6: Cerro las Tres Cruces -->
+
+        <div class="col-md-6 col-lg-3">
+          <div class="card h-100 shadow-sm">
+            <img src="../img/Tres_Cruces_Popayán.jpg" class="card-img-top" alt="Cerro Tres Cruces">
+            <div class="card-body d-flex flex-column">
+              <h5 class="text-center fw-bold">Cerro las Tres Cruces</h5>
+              <div class="mt-auto d-grid">
+                <button class="btn btn-outline-primary rounded-pill" data-bs-toggle="modal" data-bs-target="#modalTresCruces">
+                  Más info <i class="bi bi-info-circle"></i>
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Tarjeta 7: Hotel Dann Monasterio -->
+
+        <div class="col-md-6 col-lg-3">
+          <div class="card h-100 shadow-sm">
+            <img src="../img/Hotel_Dann_Monasterio,_Popayán.jpg" class="card-img-top" alt="Hotel Dann Monasterio">
+            <div class="card-body d-flex flex-column">
+              <h5 class="text-center fw-bold">Hotel Dann Monasterio</h5>
+              <div class="mt-auto d-grid">
+                <button class="btn btn-outline-primary rounded-pill" data-bs-toggle="modal" data-bs-target="#modalHotelDann">
+                  Más info <i class="bi bi-info-circle"></i>
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Tarjeta 8: Termales Puracé -->
+
+        <div class="col-md-6 col-lg-3">
+          <div class="card h-100 shadow-sm">
+            <img src="../img/termales.jpg" class="card-img-top" alt="Termales Puracé">
+            <div class="card-body d-flex flex-column">
+              <h5 class="text-center fw-bold">Termales Puracé</h5>
+              <div class="mt-auto d-grid">
+                <button class="btn btn-outline-primary rounded-pill" data-bs-toggle="modal" data-bs-target="#modalTermales">
+                  Más info <i class="bi bi-info-circle"></i>
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- =========================== SECCIÓN RESERVAS (hoteles y termales) =========================== -->
+
+    <section id="reservas" class="container mt-5 pt-4">
+      <div class="text-center mb-4">
+        <h2 class="fw-bold display-6">Reservas exclusivas</h2>
+        <p class="text-secondary">Vive la experiencia en los mejores alojamientos y atractivos naturales</p>
+        <div class="mx-auto" style="width: 60px; height: 3px; background-color: #4042c0;"></div>
+      </div>
+
+      <div class="row g-4 justify-content-center">
+        <!-- Tarjeta reserva Hotel Dann Monasterio -->
+
+        <div class="col-md-6 col-lg-5">
+          <div class="card h-100 border-0 shadow-lg rounded-4 overflow-hidden">
+            <img src="../img/Hotel_Dann_Monasterio,_Popayán.jpg" class="card-img-top" alt="Hotel Dann Monasterio" style="height: 220px;">
+            <div class="card-body">
+              <div class="d-flex justify-content-between align-items-start">
+                <h4 class="fw-bold">Hotel Dann Monasterio</h4>
+                <span class="badge bg-primary rounded-pill">4.8</span>
+              </div>
+              <p class="text-muted mt-2">Hotel histórico en un antiguo monasterio del siglo XVI, arquitectura colonial y ambiente único.</p>
+              <ul class="list-unstyled">
+                <li><i class="text-primary me-2"></i><strong>Precio por noche:</strong> $250.000 - $400.000 COP</li>
+                <li><i class="text-primary me-2"></i><strong>Incluye:</strong> desayuno, wifi, piscina</li>
+                <li><i class="text-primary me-2"></i><strong>Check-in:</strong> 3:00 pm | <strong>Check-out:</strong> 12:00 pm</li>
+              </ul>
+              <div class="d-grid mt-3">
+                <button class="btn btn-primary rounded-pill py-2 fw-semibold" data-bs-toggle="modal" data-bs-target="#reservaHotelModal">
+                  <i class=""></i> Reservar ahora
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Tarjeta reserva Termales de Puracé -->
+
+        <div class="col-md-6 col-lg-5">
+          <div class="card h-100 border-0 shadow-lg rounded-4 overflow-hidden">
+            <img src="../img/termales.jpg" class="card-img-top" alt="Termales Puracé" style="height: 220px;">
+            <div class="card-body">
+              <div class="d-flex justify-content-between align-items-start">
+                <h4 class="fw-bold">Termales de Puracé</h4>
+                <span class="badge bg-primary rounded-pill">Volcán activo</span>
+              </div>
+              <p class="text-muted mt-2">Aguas termales volcánicas, ecosistema único y senderos ecológicos inolvidables.</p>
+              <ul class="list-unstyled">
+                <li><i class="text-primary me-2"></i><strong>Entrada general:</strong> $15.000 - $25.000 COP</li>
+                <li><i class="text-primary me-2"></i><strong>Recorrido guiado:</strong> $20.000 COP</li>
+                <li><i class="text-primary me-2"></i><strong>Horario:</strong> 8:00 am - 5:00 pm</li>
+                <li><i class="text-primary me-2"></i><strong>Incluye:</strong> acceso a termales + senderos ecológicos</li>
+              </ul>
+              <div class="d-grid mt-3">
+                <button class="btn btn-primary rounded-pill py-2 fw-semibold" data-bs-toggle="modal" data-bs-target="#reservaTermalesModal">
+                  <i class=""></i> Reservar experiencia
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- =========================== FOOTER MODERNO =========================== -->
+
+  <footer id="contacto" class="bg-white text-dark mt-5 pt-4 pb-3 border-top">
+    <div class="container">
+      <div class="row align-items-center text-center text-md-start">
+        <div class="col-md-4 mb-3">
+          <h5 class="fw-bold"><i class="bi bi-compass"></i> ExploraPop</h5>
+          <p class="text-muted small">Descubre la Ciudad Blanca de Colombia — historia, cultura y naturaleza en un solo destino.</p>
+        </div>
+        <div class="col-md-4 mb-3">
+          <h6 class="fw-semibold">Contacto directo</h6>
+          <p class="mb-1"><i class="bi bi-geo-alt-fill text-primary"></i> Popayán, Cauca</p>
+          <p class="mb-1"><i class="bi bi-envelope-fill text-primary"></i> <a href="mailto:info@ExploraPop.co" class="text-dark">info@ExploraPop.co</a></p>
+          <p><i class="bi bi-telephone-fill text-primary"></i> +57 602 820 0000</p>
+        </div>
+        <div class="col-md-4 mb-3">
+          <h6 class="fw-semibold">Síguenos</h6>
+          <div class="d-flex justify-content-center justify-content-md-start gap-3">
+            <a href="https://www.instagram.com/dcastaiza/" class="text-dark fs-5"><i class="bi bi-instagram"></i></a>
+            <a href="#" class="text-dark fs-5"><i class="bi bi-facebook"></i></a>
+            <a href="#" class="text-dark fs-5"><i class="bi bi-twitter-x"></i></a>
+          </div>
+          <p class="mt-2 small text-muted">© 2025 ExploraPop - Turismo con propósito</p>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- =========================== MODALES DE INFORMACIÓN (DESTINOS) =========================== -->
+
+  <!-- Modal 1 - Parque Caldas -->
+  <div class="modal fade" id="modalParqueCaldas" tabindex="-1">
+    <div class="modal-dialog modal-dialog-centered">
+      <div class="modal-content border-0 rounded-4">
+        <div class="modal-header bg-light">
+          <h5 class="modal-title fw-bold">Parque Caldas</h5>
+          <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+        </div>
+        <div class="modal-body text-center">
+          <img src="../img/parque-caldas.jpg" class="img-fluid rounded-3 mb-3 modal-img" alt="Parque Caldas">
+          <p>El Parque Caldas es la plaza principal de Popayán, corazón histórico y cultural de la ciudad, donde se reúnen los principales edificios y actividades representativas.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Modal 2 - Morro de Tulcán -->
+
+  <div class="modal fade" id="modalMorroTulcan" tabindex="-1">
+    <div class="modal-dialog modal-dialog-centered">
+      <div class="modal-content border-0 rounded-4">
+        <div class="modal-header bg-light">
+          <h5 class="modal-title fw-bold">Morro de Tulcán</h5>
+          <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+        </div>
+        <div class="modal-body text-center">
+          <img src="../img/El_Morro_de_Tulcán,_Popayán.jpg" class="img-fluid rounded-3 mb-3 modal-img" alt="Morro Tulcán">
+          <p>El Morro del Tulcán es un antiguo túmulo indígena ubicado en Popayán, testimonio arqueológico de la época precolombina.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Modal 3 - Puente del Humilladero -->
+
+  <div class="modal fade" id="modalPuente" tabindex="-1">
+    <div class="modal-dialog modal-dialog-centered">
+      <div class="modal-content border-0 rounded-4">
+        <div class="modal-header bg-light">
+          <h5 class="modal-title fw-bold">Puente del Humilladero</h5>
+          <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+        </div>
+        <div class="modal-body text-center">
+          <img src="../img/Puente_del_Humilladero.jpeg" class="img-fluid rounded-3 mb-3 modal-img" alt="Puente">
+          <p>El Puente del Humilladero, construido en el siglo XIX, es un emblemático puente colonial que conecta zonas históricas de Popayán.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Modal 4 - Catedral -->
+  <div class="modal fade" id="modalCatedral" tabindex="-1">
+    <div class="modal-dialog modal-dialog-centered">
+      <div class="modal-content border-0 rounded-4">
+        <div class="modal-header bg-light">
+          <h5 class="modal-title fw-bold">Catedral Basílica de Popayán</h5>
+          <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+        </div>
+        <div class="modal-body text-center">
+          <img src="../img/Catedralpopayan.jpg" class="img-fluid rounded-3 mb-3 modal-img" alt="Catedral">
+          <p>La Catedral Basílica es la iglesia principal de Popayán, con arquitectura colonial y gran importancia religiosa y cultural.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Modal 5 - Pueblito Patojo -->
+  <div class="modal fade" id="modalPatojo" tabindex="-1">
+    <div class="modal-dialog modal-dialog-centered">
+      <div class="modal-content border-0 rounded-4">
+        <div class="modal-header bg-light">
+          <h5 class="modal-title fw-bold">Pueblito Patojo</h5>
+          <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+        </div>
+        <div class="modal-body text-center">
+          <img src="../img/Pueblito-patojo.jpg" class="img-fluid rounded-3 mb-3 modal-img" alt="Pueblito Patojo">
+          <p>Esta réplica en miniatura muestra los monumentos y edificios más representativos de la ciudad, ideal para conocer Popayán a escala.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Modal 6 - Cerro Tres Cruces -->
+  <div class="modal fade" id="modalTresCruces" tabindex="-1">
+    <div class="modal-dialog modal-dialog-centered">
+      <div class="modal-content border-0 rounded-4">
+        <div class="modal-header bg-light">
+          <h5 class="modal-title fw-bold">Cerro las Tres Cruces</h5>
+          <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+        </div>
+        <div class="modal-body text-center">
+          <img src="../img/Tres_Cruces_Popayán.jpg" class="img-fluid rounded-3 mb-3 modal-img" alt="Cerro Tres Cruces">
+          <p>Es un mirador natural emblemático, famoso por sus senderos ecológicos, caminatas familiares y la vista panorámica de la Ciudad Blanca.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Modal 7 - Hotel Dann Monasterio (info) -->
+  <div class="modal fade" id="modalHotelDann" tabindex="-1">
+    <div class="modal-dialog modal-dialog-centered">
+      <div class="modal-content border-0 rounded-4">
+        <div class="modal-header bg-light">
+          <h5 class="modal-title fw-bold">Hotel Dann Monasterio</h5>
+          <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+        </div>
+        <div class="modal-body text-center">
+          <img src="../img/Hotel_Dann_Monasterio,_Popayán.jpg" class="img-fluid rounded-3 mb-3 modal-img" alt="Hotel Dann">
+          <p>El Hotel Dann Monasterio es un histórico hotel ubicado en un antiguo monasterio del siglo XVI, con arquitectura colonial y jardines únicos.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Modal 8 - Termales Puracé (info) -->
+  <div class="modal fade" id="modalTermales" tabindex="-1">
+    <div class="modal-dialog modal-dialog-centered">
+      <div class="modal-content border-0 rounded-4">
+        <div class="modal-header bg-light">
+          <h5 class="modal-title fw-bold">Termales Puracé</h5>
+          <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+        </div>
+        <div class="modal-body text-center">
+          <img src="../img/termales.jpg" class="img-fluid rounded-3 mb-3 modal-img" alt="Termales">
+          <p>Las termales de Puracé son conocidas por sus aguas termales volcánicas, con un ecosistema único y actividad volcánica activa.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- =========================== MODALES DE RESERVA =========================== -->
+  <!-- Modal Reserva Hotel -->
+  <div class="modal fade" id="reservaHotelModal" tabindex="-1">
+    <div class="modal-dialog modal-dialog-centered">
+      <div class="modal-content rounded-4 border-0">
+        <div class="modal-header bg-primary text-white">
+          <h5 class="modal-title fw-semibold"><i class="bi bi-building"></i> Reserva - Hotel Dann Monasterio</h5>
+          <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal"></button>
+        </div>
+        <div class="modal-body p-4">
+          <form>
+            <div class="mb-3">
+              <label class="form-label fw-semibold">Nombre completo</label>
+              <input type="text" class="form-control rounded-pill" placeholder="Ej: Ana María López">
+            </div>
+            <div class="mb-3">
+              <label class="form-label fw-semibold">Correo electrónico</label>
+              <input type="email" class="form-control rounded-pill" placeholder="correo@ejemplo.com">
+            </div>
+            <div class="mb-3">
+              <label class="form-label fw-semibold">Teléfono</label>
+              <input type="tel" class="form-control rounded-pill" placeholder="+57 300 123 4567">
+            </div>
+            <button type="submit" class="btn btn-primary w-100 rounded-pill py-2">Confirmar reserva <i class="bi bi-check2-circle"></i></button>
+          </form>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Modal Reserva Termales -->
+  <div class="modal fade" id="reservaTermalesModal" tabindex="-1">
+    <div class="modal-dialog modal-dialog-centered">
+      <div class="modal-content rounded-4 border-0">
+        <div class="modal-header bg-primary text-white">
+          <h5 class="modal-title fw-semibold"><i class="bi bi-water"></i> Reserva - Termales de Puracé</h5>
+          <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal"></button>
+        </div>
+        <div class="modal-body p-4">
+          <form>
+            <div class="mb-3">
+              <label class="form-label fw-semibold">Nombre completo</label>
+              <input type="text" class="form-control rounded-pill" placeholder="Ej: Ana María López">
+            </div>
+            <div class="mb-3">
+              <label class="form-label fw-semibold">Correo electrónico</label>
+              <input type="email" class="form-control rounded-pill" placeholder="correo@ejemplo.com">
+            </div>
+            <div class="mb-3">
+              <label class="form-label fw-semibold">Teléfono de contacto</label>
+              <input type="text" class="form-control rounded-pill" placeholder="+57 300 123 4567">
+            </div>
+            <button type="submit" class="btn btn-primary w-100 rounded-pill py-2">Reservar ahora <i class="bi bi-tree"></i></button>
+          </form>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Bootstrap JS Bundle -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+
+</html>
